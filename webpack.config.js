@@ -11,5 +11,8 @@ module.exports = {
 
   watchOptions: {
     aggregateTimeout: 100
-  }
+  },
+
+  devtool: 'eval'
+
 };
