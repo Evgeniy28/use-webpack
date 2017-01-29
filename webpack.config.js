@@ -23,6 +23,20 @@ module.exports = {
       NODE_ENV: JSON.stringify(NODE_ENV),
       LANG: JSON.stringify('ru'),
     })
-  ]
+  ],
+
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015'],
+          plugins: ['transform-runtime']
+        }
+      }
+    ]
+  }
 
 };
