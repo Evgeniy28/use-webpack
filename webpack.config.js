@@ -25,12 +25,23 @@ module.exports = {
     })
   ],
 
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ['.js']
+  },
+
+  resolveLoader: {
+    modules: ['node_modules'],
+    moduleExtensions: ['-loader'],
+    extensions: ['.js']
+  },
+
   module: {
     loaders: [
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
+        loader: 'babel',
         query: {
           presets: ['es2015'],
           plugins: ['transform-runtime']
