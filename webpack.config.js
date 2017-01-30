@@ -16,7 +16,7 @@ module.exports = {
     aggregateTimeout: 100
   },
 
-  devtool: NODE_ENV == 'development' ? 'cheap-inline-module-source-map' : null,
+  devtool: NODE_ENV == 'development' ? 'cheap-inline-module-source-map' : 'hidden-source-map',
 
   plugins: [
     new webpack.DefinePlugin({
@@ -51,3 +51,15 @@ module.exports = {
   }
 
 };
+
+if (NODE_ENV == 'production') {
+  module.exports.plugins.push(
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings:     false,
+        drop_console: false,
+        unsafe:       true
+      }
+    })
+  );
+}
