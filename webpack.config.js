@@ -26,6 +26,7 @@ module.exports = {
   devtool: NODE_ENV == 'development' ? 'cheap-inline-module-source-map' : 'hidden-source-map',
 
   plugins: [
+    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV),
       LANG: JSON.stringify('ru'),
