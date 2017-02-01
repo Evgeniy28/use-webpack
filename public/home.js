@@ -1,7 +1,7 @@
 var home =
 webpackJsonp_name_([0],{
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19,5 +19,5 @@ exports.welcome = _welcome2.default;
 
 /***/ })
 
-},[2]);
+},[3]);
 //# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaG9tZS5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9mcm9udGVuZC9ob21lLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcblxuaW1wb3J0IHdlbGNvbWUgZnJvbSAnLi93ZWxjb21lJztcblxud2VsY29tZShcImhvbWVcIik7XG5cbmV4cG9ydHMud2VsY29tZSA9IHdlbGNvbWU7XG5cblxuXG4vLyBXRUJQQUNLIEZPT1RFUiAvL1xuLy8gZnJvbnRlbmQvaG9tZS5qcyJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBOzs7OztBQUNBO0FBQ0E7Ozs7OyIsInNvdXJjZVJvb3QiOiIifQ==
