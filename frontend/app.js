@@ -1,7 +1,11 @@
 'use strict';
 
 document.getElementById('loginButton').onclick = function() {
-  let login = require('./login');
 
-  login();
+  require.ensure([], function(require) {
+    let login = require('./login');
+
+    login();
+  });
+
 };
