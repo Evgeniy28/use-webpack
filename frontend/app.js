@@ -2,6 +2,13 @@
 
 let moduleName = location.pathname.slice(1);
 
-let route = require('./routes/' + moduleName);
+let context = require.context('./routes/', false, /\.js$/);
 
-route();
+context.keys().forEach(function(path) {
+  let module = context(path);
+  module();
+});
+
+// let route = context('./' + moduleName);
+//
+// route();
