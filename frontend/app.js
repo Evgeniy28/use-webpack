@@ -1,21 +1,7 @@
 'use strict';
 
-document.getElementById('loginButton').onclick = function() {
+let moduleName = location.pathname.slice(1);
 
-  require.ensure([], function(require) {
-    let login = require('./login');
+let route = require('./routes/' + moduleName);
 
-    login();
-  }, 'auth');
-
-};
-
-document.getElementById('logoutButton').onclick = function() {
-
-  require.ensure([], function(require) {
-    let logout = require('./logout');
-
-    logout();
-  }, 'auth');
-
-};
+route();
