@@ -2,13 +2,17 @@
 
 let moduleName = location.pathname.slice(1);
 
-let context = require.context('./routes/', false, /\.js$/);
+let handler;
 
-context.keys().forEach(function(path) {
-  let module = context(path);
-  module();
-});
+try {
+  handler = require('bundle!./routes/' + moduleName);
+} catch (e) {
+  alert("No such path")
+}
 
-// let route = context('./' + moduleName);
-//
-// route();
+if (handler) {
+  handler(function(route) {
+    route();
+
+  });
+}
