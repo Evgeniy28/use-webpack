@@ -17,10 +17,19 @@ module.exports = {
     extensions: ['.js']
   },
 
-  plugins: [
-    new webpack.ProvidePlugin({
-      pluck: 'lodash/collection/pluck'
-    })
-  ]
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        include: __dirname + './frontend',
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015'],
+          plugins: ['transform-runtime']
+        }
+      }
+    ],
+    noParse: /angular\/angular.js/
+  }
 
 };

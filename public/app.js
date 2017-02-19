@@ -68,20 +68,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(pluck) {
-
-let users = [
-  {id: 'add', name: 'Vdfgdf'},
-  {id: 'dsa', name: 'Fddfd'},
-  {id: 'fds', name: 'Ggfgf'}
-];
-
-console.log( pluck(users, 'name') );
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"/lodash/collection/pluck\""); e.code = 'MODULE_NOT_FOUND';; throw e; }()))))
+throw new Error("Module build failed: Error: Cannot find module './node_modules/babel-loader/lib/index.js'\n    at Function.Module._resolveFilename (module.js:469:15)\n    at Function.Module._load (module.js:417:25)\n    at Module.require (module.js:497:17)\n    at require (internal/module.js:20:19)\n    at loadLoader (/Users/evgeniy/rails_projects/use-webpack/node_modules/loader-runner/lib/loadLoader.js:13:17)\n    at iteratePitchingLoaders (/Users/evgeniy/rails_projects/use-webpack/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at runLoaders (/Users/evgeniy/rails_projects/use-webpack/node_modules/loader-runner/lib/LoaderRunner.js:362:2)\n    at NormalModule.doBuild (/Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/NormalModule.js:129:2)\n    at NormalModule.build (/Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/NormalModule.js:180:15)\n    at Compilation.buildModule (/Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/Compilation.js:142:10)\n    at moduleFactory.create (/Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/Compilation.js:424:9)\n    at /Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/NormalModuleFactory.js:242:4\n    at /Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/NormalModuleFactory.js:93:13\n    at /Users/evgeniy/rails_projects/use-webpack/node_modules/tapable/lib/Tapable.js:204:11\n    at NormalModuleFactory.params.normalModuleFactory.plugin (/Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/CompatibilityPlugin.js:52:5)\n    at NormalModuleFactory.applyPluginsAsyncWaterfall (/Users/evgeniy/rails_projects/use-webpack/node_modules/tapable/lib/Tapable.js:208:13)\n    at onDoneResolving (/Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/NormalModuleFactory.js:68:11)\n    at onDoneResolving (/Users/evgeniy/rails_projects/use-webpack/node_modules/webpack/lib/NormalModuleFactory.js:189:6)\n    at _combinedTickCallback (internal/process/next_tick.js:67:7)\n    at process._tickCallback (internal/process/next_tick.js:98:9)");
 
 /***/ })
 /******/ ]);
